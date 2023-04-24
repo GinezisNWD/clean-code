@@ -87,12 +87,7 @@ var taskIncomplete = function () {
 	bindTaskEvents(listItem, taskCompleted);
 }
 
-var ajaxRequest = function () {
-	console.log("AJAX Request");
-}
-
 addButton.addEventListener("click", addTask);
-addButton.addEventListener("click", ajaxRequest);
 
 var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
 	var checkBox = taskListItem.querySelector(".todo-item__checkbox");
